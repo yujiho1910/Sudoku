@@ -13,6 +13,6 @@ public interface IUserInterfaceContract {
         void updateSquare(int x, int y, int input);
         void updateBoard(SudokuGame game);
         void showDialog(String message);
-        void showError(String message)
+        void showError(String message);
     }
 }
