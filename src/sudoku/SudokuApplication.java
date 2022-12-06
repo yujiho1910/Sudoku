@@ -2,6 +2,9 @@ package sudoku;
 
 import java.io.IOException;
 
+import sudoku.userInterface.IUserInterfaceContract;
+import sudoku.userInterface.UserInterfaceImpl;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
