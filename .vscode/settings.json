@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx-swt.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.base.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.controls.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.fxml.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.graphics.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.media.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.swing.jar",
+        "/Users/yujiho/Desktop/My Uni Stuff/Personal WebDev/javafx-sdk-19/lib/javafx.web.jar"
+    ]
+}
