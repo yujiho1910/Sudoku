@@ -1,5 +1,9 @@
 # Sudoku game using Java
 
+### Setup
+Need to download javafx
+Then need to link path to vscode (example in .vscode)
+
 ## To play
 1) Download src files
 2) Open folder in vscode
