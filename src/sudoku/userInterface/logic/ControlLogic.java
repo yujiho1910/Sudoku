@@ -2,6 +2,7 @@ package sudoku.userInterface.logic;
 
 import java.io.IOException;
 
+import sudoku.computationlogic.GameLogic;
 import sudoku.constants.GameState;
 import sudoku.constants.Messages;
 import sudoku.problemDomain.IStorage;
@@ -32,7 +33,7 @@ public class ControlLogic implements IUserInterfaceContract.EventListener {
                 newGridState
             );
 
-            storage.updateGame(gameData);
+            storage.updateGameData(gameData);
 
             view.updateSquare(x, y, input);
 
@@ -48,7 +49,7 @@ public class ControlLogic implements IUserInterfaceContract.EventListener {
     @Override
     public void onDialogClick() {
         try {
-            storage.updateGame(GameLogic.getNewGame());
+            storage.updateGameData(GameLogic.getNewGame());
 
             view.updateBoard(storage.getGameData());
         } catch (IOException e) {

@@ -2,13 +2,11 @@ package sudoku;
 
 import java.io.IOException;
 
+import sudoku.buildlogic.SudokuBuildLogic;
 import sudoku.userInterface.IUserInterfaceContract;
 import sudoku.userInterface.UserInterfaceImpl;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 

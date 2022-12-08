@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import javafx.scene.layout.GridPane;
 import sudoku.problemDomain.Coordinates;
 
 import static sudoku.problemDomain.SudokuGame.GRID_BOUNDARY;
@@ -38,10 +37,10 @@ public class GameGenerator {
             int[][] toBeSolved = new int[GRID_BOUNDARY][GRID_BOUNDARY];
             SudokuUtilities.copySudokuArrayValues(solvableArray, toBeSolved);
 
-            solvable = SudokuSolver.puzzleIsSolvable(tobeSolved);
+            solvable = SudokuSolver.puzzleIsSolvable(toBeSolved);
         }
 
-        return new int[0][];
+        return solvableArray;
     }
 
     private static int[][] getSolvedGame() {
@@ -82,7 +81,7 @@ public class GameGenerator {
                 if (newGrid[xCoordinate][yCoordinate] == 0) {
                     newGrid[xCoordinate][yCoordinate] = value;
 
-                    if (GameLogic.sudokoIsInvalid(newGrid)) {
+                    if (GameLogic.sudokuIsInvalid(newGrid)) {
 
                         // also backtracking here   
                         newGrid[xCoordinate][yCoordinate] = 0;
